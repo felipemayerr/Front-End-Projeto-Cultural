@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial
+}
+
+.text {
+    margin-bottom: 50px;
+    font-family: "SUSE";
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 100%;
+    width: 80%;
+    word-break: break-word;
+    line-height: 1.5;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.conteudos {
+    margin-top: 20px;
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subconteudos {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner {
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textTitulo {
+    margin-top: 50px;
+    font-family: "Oswald";
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgFormat {
+    border: 4px solid;
+    border-radius: 10px;
+    border-color: #8b98a8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.crencaEReligiao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textReligiao {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "SUSE";
+    max-width: 80%;
+    margin: 40px auto;
+    font-size: 20px;
+    word-break: break-word;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.textCrenca {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "SUSE";
+    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    word-break: break-word;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.textIdioma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "SUSE";
+    max-width: 100%;
+    margin: 10px auto;
+    font-size: 20px;
+    word-break: break-word;
+    line-height: 1.3;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+}
+
+.textFonteConfiavel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "SUSE";
+    max-width: 100%;
+    margin: 10px auto;
+    font-size: 20px;
+    text-decoration: underline;
+    word-break: break-word;
+    line-height: 1.3;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo,.sociais {
+    width: 20%;
+}
+
+.logo {
+    margin-right: 200px;
+}
+
+.logo img {
+    width: 170px;
+    height: 105px;
+    margin-left: 120px;
+}
+
+.sociais button {
+    background-color: black;
+    border: black;
+    margin: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+.sociais {
+    margin-left: 200px;
+}
+.sociais img {
+    height: 40px;
+    width: 40px;
+}
+
+.menu { 
+    width: 50%;
+}
+
+.menu nav a::after {
+    content: '';
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #FF2500, #FF7100);
+    position: absolute;
+    top: 22px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    position: relative;
+}
+
+.menu nav a b {
+    font-family: "Poppins";
+}

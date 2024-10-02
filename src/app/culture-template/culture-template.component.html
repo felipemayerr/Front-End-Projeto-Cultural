@@ -1,0 +1,52 @@
+<!--
+id: string, 
+    cultura_titulo: string,
+    cultura_descricao: string,
+    cultura_mapaCultural: string,
+    cultura_imagem: string,
+    cultura_fonteConfiavel: string,
+    cultura_religiao: string,
+    cultura_crenca: string,
+    cultura_idioma: string,
+    cultura_pais: string,
+-->
+<header>
+    <div class="container">
+        <div class="logo"><img src="https://i.imgur.com/BU8quh9.png"></div>
+            <div class="menu">
+                 <nav>
+                    <a href=""><b>Pagina Inicial</b></a>
+                    <a href="culture/1"><b>Indigena</b></a>
+                    <a href="culture/2"><b>Africana</b></a>
+                    <a href="culture/3"><b>Japonesa</b></a>
+                    <a href="culture/4"><b>Hindu</b></a>
+                    <a href="culture/5"><b>Maia</b></a>
+                    <a href="culture/6"><b>Faraônica</b></a>
+                    <a href="culture/7"><b>Eslava</b></a>
+                    <a href="culture/8"><b>Aborígene</b></a>
+                    <a href="culture/9"><b>Renascentista</b></a>
+                </nav>
+         </div>
+         <div class="sociais">
+            <button><a href="https://www.instagram.com/"><img src="https://i.imgur.com/MmB7KqP.png"></a></button>
+            <button><a href="https://www.facebook.com/"><img src="https://i.imgur.com/7Sdthu4.png"></a></button>
+         </div>
+    </div>
+</header>
+<div class="conteiner">
+    <div class="conteudos">
+        <div class="subconteudo">
+                <div class="textTitulo"><h1>{{ cultura?.cultura_titulo }} do {{ cultura?.cultura_pais }}</h1></div>
+                <div class="text">{{ cultura?.cultura_descricao }}</div>    
+                <div class="imagens"><img class="imgFormat" src="{{cultura?.cultura_mapaCultural}}" alt=""></div>
+                <div class="CrencaEReligiao">
+                    <div class="textReligiao">{{ cultura?.cultura_religiao }}</div>
+                    <div class="textCrenca">{{ cultura?.cultura_crenca }}</div>
+                </div>
+                <div class="imagens"><img class="imgFormat" src="{{cultura?.cultura_imagem}}" alt=""></div>
+                <div class="textIdioma">{{ cultura?.cultura_idioma}}</div>
+                <div><a class="textFonteConfiavel" href="{{ cultura?.cultura_fonteConfiavel}}">{{ cultura?.cultura_fonteConfiavel}}</a></div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

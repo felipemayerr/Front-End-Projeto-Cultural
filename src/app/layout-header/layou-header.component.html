@@ -1,0 +1,50 @@
+<header>
+    <div class="container">
+        <div class="logo"><img src="https://i.imgur.com/BU8quh9.png"></div>
+            <div class="menu">
+                 <nav>
+                    <a href=""><b>Pagina Inicial</b></a>
+                    <a href="culture/1"><b>Indigena</b></a>
+                    <a href="culture/2"><b>Africana</b></a>
+                    <a href="culture/3"><b>Japonesa</b></a>
+                    <a href="culture/4"><b>Hindu</b></a>
+                    <a href="culture/5"><b>Maia</b></a>
+                    <a href="culture/6"><b>Faraônica</b></a>
+                    <a href="culture/7"><b>Eslava</b></a>
+                    <a href="culture/8"><b>Aborígene</b></a>
+                    <a href="culture/9"><b>Renascentista</b></a>
+                </nav>
+         </div>
+         <div class="sociais">
+            <button><a href="https://www.instagram.com/"><img src="https://i.imgur.com/MmB7KqP.png"></a></button>
+            <button><a href="https://www.facebook.com/"><img src="https://i.imgur.com/7Sdthu4.png"></a></button>
+         </div>
+    </div>
+</header>
+
+<div *ngIf="images && images.length > 0" class="carousel-container">
+    <img *ngFor="let image of images; let i=index"
+    [src]="image.imageSrc" [alt]="image.imageAlt"
+    [ngClass]="{'image-active': selectedIndex === i}"
+    class="fade"
+    >
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images; let i=index" 
+        class="dot"
+        [ngClass]="{'active': selectedIndex === i}"
+        (click)="selectImage(i)"
+        >
+    </span>
+    </div>
+    
+    <button *ngIf="controls" class="btn-carousel btn-prev"  (click)="onPrevClick()">
+        <i class="icon-carousel icon-prev"
+        > ᐊ </i>
+    </button>
+    <button *ngIf="controls" class="btn-carousel btn-next" (click)="onNextClick()">
+        <i class="icon-carousel icon-prev"
+        >ᐅ</i>
+    </button>
+</div>
+  
+  
